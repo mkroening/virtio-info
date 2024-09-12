@@ -1,0 +1,16 @@
+[package]
+name = "virtio-info"
+version = "0.1.0"
+authors = ["Martin Kröning <mkroening@posteo.net>"]
+edition = "2021"
+description = "Prints information about available virtio devices."
+repository = "https://github.com/mkroening/virtio-info"
+license = "MIT OR Apache-2.0"
+keywords = ["linux", "virtio", "sysfs", "guest", "vm"]
+categories = ["command-line-utilities", "os::linux-apis"]
+
+[dependencies]
+anyhow = "1"
+bitflags = "2"
+clap = { version = "4", features = ["derive"] }
+virtio = { package = "virtio-spec", version = "0.1" }
